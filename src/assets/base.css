@@ -1,0 +1,28 @@
+:root {
+  --color-text: black;
+  --color-background: white;
+  --color-background-wrapper: rgb(255, 255, 250);
+  /*--color-background-wrapper: rgb(255, 235, 250);*/
+  --color-border: rgb(150, 150, 150);
+  --color-border-card: rgb(200, 200, 200);
+
+  --color-footer: rgb(180, 180, 180);
+
+  --font-family-monospace: Menlo, Courier, monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  line-height: 1.6;
+  font-family: Arial, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+}
