@@ -541,7 +541,7 @@ describe("calculator.ts", () => {
           expect(prettifySeconds(last.time.totalSeconds!)).toBe("7:01:57");
         });
 
-        describe("Mile splits", () => {
+        it("Mile splits", () => {
           const userInput: UserInput = {
             distance: { quantity: 42195, unit: "m", defined: true },
             splitDistance: "mi",
@@ -571,7 +571,7 @@ describe("calculator.ts", () => {
       });
 
       describe("10 km", () => {
-        describe("Kilometer splits", () => {
+        it("Kilometer splits", () => {
           const userInput: UserInput = {
             distance: { quantity: 10, unit: "km", defined: true },
             splitDistance: "km",
@@ -599,7 +599,7 @@ describe("calculator.ts", () => {
           expect(prettifySeconds(last.time.totalSeconds!)).toBe("40:00");
         });
 
-        describe("Mile splits", () => {
+        it("Mile splits", () => {
           const userInput: UserInput = {
             distance: { quantity: 10, unit: "km", defined: true },
             splitDistance: "mi",

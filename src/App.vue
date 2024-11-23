@@ -5,9 +5,13 @@ import { version as appVersion } from "../package.json";
 
 const currentYear: number = new Date().getFullYear();
 
+const lastModifiedISO: string =
+  new Date(document.lastModified).toISOString().slice(0, 16) + "Z";
+
 onMounted(() => {
   console.info(`App component is mounted`);
   console.info(`Using Vue ${vueVersion}`);
+  console.info(`Built ${lastModifiedISO}`);
 });
 </script>
 
@@ -27,9 +31,10 @@ onMounted(() => {
   <footer>
     <div>
       <div>
-        NNM Pace Calculator <var>{{ appVersion }}</var>
+        <strong>NNM Pace Calculator</strong> <var>{{ appVersion }}</var>
       </div>
       <div>Vue: {{ vueVersion }}</div>
+      <div>App built: {{ lastModifiedISO }}</div>
       <div>
         <a href="https://github.com/epursimuove/pace-calculator">Source code</a>
         at GitHub.

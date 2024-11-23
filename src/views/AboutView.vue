@@ -5,21 +5,17 @@
     <header>About</header>
 
     <p>
-      <em>NNM Pace Calculator</em> is proudly presented by
-      <a href="https://anders.nemonisimors.com"><em>Anders Gustafson</em></a
-      >.
+      The <em>NNM Pace Calculator</em>, is a free-to-use online tool that
+      calculates distances, paces, speeds, times and target split times.
     </p>
 
     <p>
-      The <em>NNM Pace Calculator</em>, is a free-to-use online tool that
-      calculates distances, paces, speeds and times. The
-      <em>NNM Pace Calculator</em> is a spare time project designed, developed
-      and maintained by
+      The
+      <em>NNM Pace Calculator</em> is a spare time project designed, developed,
+      maintained and proudly presented by
       <a href="https://anders.nemonisimors.com"><em>Anders Gustafson</em></a>
       with useful help and hints especially from <em>Ingmarie Nilsson</em>.
     </p>
-
-    <p>Delivered as is, with the best of intentions, but no guarantees.</p>
 
     <p>
       The official version of <em>NNM Pace Calculator</em> is located at
@@ -36,6 +32,8 @@
       so please, send any comments, questions, suggestions, errata, etc to me.
     </p>
 
+    <p>Delivered as is, with the best of intentions, but no guarantees.</p>
+
     <h1>Purpose/background</h1>
 
     <p>
@@ -49,13 +47,23 @@
     <h2>History</h2>
 
     <p>
-      Version <var>5.0.0</var> was introduced in November 2024. Version
-      <var>5.0.0</var> is an improvement of two previous variants, the original
-      <em>NNM Pace Calculator</em> and the <em>NNM Pace Calculator JS</em>. The
-      original NNM Pace Calculator was developed from October 2002 to April 2011
-      and reached version <var>4.2</var>. The NNM Pace Calculator JS was
-      developed from September 2012 to September 2018 and reached version
-      <var>1.3</var>.
+      The original
+      <em>NNM Pace Calculator</em> was developed from October 2002 to April 2011
+      and reached version <var>4.2</var>. It was implemented in PHP.
+    </p>
+
+    <p>
+      The <em>NNM Pace Calculator JS</em> was developed from September 2012 to
+      September 2018 and reached version <var>1.3</var>. It was implemented with
+      plain JavaScript.
+    </p>
+
+    <p>
+      In November 2024 version <var>5.0.0</var> of
+      <em>NNM Pace Calculator</em> was introduced. It is an improvement where
+      the best parts of the two previous variants are refined. Rewritten from
+      scratch, implemented with Vue and Typescript and a much better responsive
+      design.
     </p>
 
     <h1>Mottoes</h1>
