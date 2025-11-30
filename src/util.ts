@@ -241,7 +241,7 @@ export const handleIllegalStateAndCreateError = (
 
 export const getFirstAndLastItems = <T>(
   array: T[],
-): { first: T; length: number; last: T } => {
+): { first: T | undefined; length: number; last: T | undefined } => {
   const { 0: first, length, [length - 1]: last } = array;
 
   return { first, length, last };

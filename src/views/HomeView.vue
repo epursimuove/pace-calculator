@@ -91,13 +91,7 @@ const validForm: ComputedRef<boolean> = computed(() => {
 
 <template>
   <main>
-    <InputForm
-      v-model="userInput"
-      @changeDistanceQuantity="
-        (distanceQuantity: number) =>
-          console.log(`Received distance quantity: ${distanceQuantity}`)
-      "
-    />
+    <InputForm v-model="userInput" />
 
     <p v-if="!validForm" class="error-message">
       At most two of distance, time and pace can be defined!

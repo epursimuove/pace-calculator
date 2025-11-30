@@ -85,7 +85,7 @@ describe("calculator.ts", () => {
         );
 
         expect(length).toBe(1);
-        expect(first.unit).toBe("nmi");
+        expect(first?.unit).toBe("nmi");
       });
 
       it("when no distance is defined by user", () => {
@@ -224,7 +224,7 @@ describe("calculator.ts", () => {
 
         expect(lengthPace).toBe(0);
         expect(lengthSpeed).toBe(1);
-        expect(firstSpeed.unit).toBe("ft/s");
+        expect(firstSpeed?.unit).toBe("ft/s");
       });
 
       it("when no velocity is defined by user", () => {
@@ -534,11 +534,11 @@ describe("calculator.ts", () => {
 
           expect(length).toBe(43);
 
-          expect(first.distance.quantity).toBe(1);
-          expect(prettifySeconds(first.time.totalSeconds!)).toBe("10:00");
+          expect(first?.distance.quantity).toBe(1);
+          expect(prettifySeconds(first?.time.totalSeconds!)).toBe("10:00");
 
-          expect(last.distance.quantity).toBe(42.195);
-          expect(prettifySeconds(last.time.totalSeconds!)).toBe("7:01:57");
+          expect(last?.distance.quantity).toBe(42.195);
+          expect(prettifySeconds(last?.time.totalSeconds!)).toBe("7:01:57");
         });
 
         it("Mile splits", () => {
@@ -562,11 +562,11 @@ describe("calculator.ts", () => {
 
           expect(length).toBe(27);
 
-          expect(first.distance.quantity).toBe(1);
-          expect(prettifySeconds(first.time.totalSeconds!)).toBe("16:06");
+          expect(first?.distance.quantity).toBe(1);
+          expect(prettifySeconds(first?.time.totalSeconds!)).toBe("16:06");
 
-          expect(last.distance.quantity).toBeCloseTo(26.22);
-          expect(prettifySeconds(last.time.totalSeconds!)).toBe("7:01:57");
+          expect(last?.distance.quantity).toBeCloseTo(26.22);
+          expect(prettifySeconds(last?.time.totalSeconds!)).toBe("7:01:57");
         });
       });
 
@@ -592,11 +592,11 @@ describe("calculator.ts", () => {
 
           expect(length).toBe(10);
 
-          expect(first.distance.quantity).toBe(1);
-          expect(prettifySeconds(first.time.totalSeconds!)).toBe("4:00");
+          expect(first?.distance.quantity).toBe(1);
+          expect(prettifySeconds(first?.time.totalSeconds!)).toBe("4:00");
 
-          expect(last.distance.quantity).toBe(10);
-          expect(prettifySeconds(last.time.totalSeconds!)).toBe("40:00");
+          expect(last?.distance.quantity).toBe(10);
+          expect(prettifySeconds(last?.time.totalSeconds!)).toBe("40:00");
         });
 
         it("Mile splits", () => {
@@ -620,11 +620,11 @@ describe("calculator.ts", () => {
 
           expect(length).toBe(7);
 
-          expect(first.distance.quantity).toBe(1);
-          expect(prettifySeconds(first.time.totalSeconds!)).toBe("6:26");
+          expect(first?.distance.quantity).toBe(1);
+          expect(prettifySeconds(first?.time.totalSeconds!)).toBe("6:26");
 
-          expect(last.distance.quantity).toBeCloseTo(6.21);
-          expect(prettifySeconds(last.time.totalSeconds!)).toBe("40:00");
+          expect(last?.distance.quantity).toBeCloseTo(6.21);
+          expect(prettifySeconds(last?.time.totalSeconds!)).toBe("40:00");
         });
       });
     });
